@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/wassup.png" alt="">
+            <h1>ChatterBox</h1>
+        </div>
+        <div class="group__controls">
+            <button id="createGroupBtn">Create Group</button>
+            <button id="joinGroup">Join Group</button>
+            <button id="leaveGroup" style="display: none;">Leave Group</button>
+            <button id="showParticipants">Show Participants</button>
+            <div id="participantsArea"></div>
+
+        </div>
+        <div class="message__area"></div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+        <div id="participantsArea"></div>
+    </section>
+
+    <!-- Modal for creating a group -->
+    <div id="groupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create Group</h2>
+            <input id="modalGroupName" type="text" placeholder="Enter group name">
+            <button id="modalCreateGroup">Create</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
