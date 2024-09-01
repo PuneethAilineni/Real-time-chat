@@ -25,7 +25,6 @@ ChatterBox is a real-time chat application that allows users to create, join, an
 
 ## Installation and Setup
 
-### Clone the Repository
 1. Clone the repository from GitHub.
 2. Navigate into the project directory.
 3. Install the necessary dependencies for both the frontend and backend (npm install).
